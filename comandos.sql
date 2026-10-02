@@ -144,6 +144,12 @@ aeronaves.codigo_cauda,
 voos.status
 from voos join aeronaves on voos.aeronaves_id = aeronaves.id
 
+create VIEW  vw_faturamento_por_voo as
+select
+voos.id,
+voos.numero_voo,
+voos.destino,
+
 
 
 
