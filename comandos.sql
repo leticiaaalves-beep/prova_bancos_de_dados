@@ -133,7 +133,16 @@ and passagens.valor >800.00
 order by passagens.valor desc
 
 
-
+create VIEW vw_painel_aeroporto as
+select
+voos.numero_voo,
+voos.data_hora,
+voos.origem,
+voos.destino,
+aeronaves.modelo,
+aeronaves.codigo_cauda,
+voos.status
+from voos join aeronaves on voos.aeronaves_id = aeronaves.id
 
 
 
