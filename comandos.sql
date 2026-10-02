@@ -130,6 +130,10 @@ FROM passagens join passageiros on passagens.passageiros_id = passageiros.id
 join voos on passagens.voos_id = voos.id
 WHERE passagens.classe = 'executiva'
 and passagens.valor >800.00 
+order by passagens.valor desc
+
+
+
 
 
 
